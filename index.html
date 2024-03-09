@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😃Emoji</title>
+    <link rel="shortcut icon" href="favicon12.webp" type="image/x-icon">
+
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #0acecb;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input styles */
+.input-field {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Button styles */
+.button {
+    background-color: #fdfdfd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fefefe;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Emoji container styles */
+.emoji-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Emoji card styles */
+.emoji-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="data.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="w-full bg-black text-white py-10 px-10 flex flex-col items-center">
+    <h1 class="font-semibold text-4xl tracking-wider text-center">Emoji</h1><br>
+    <hr><br>
+    <div class="mx-auto flex ">
+        <input style="box-shadow: 0px 0px 35px rgb(246, 246, 246);" type="text" name="" id="search_field" placeholder="Search Emojipedia" class="text-md px-5 tracking-wider py-1 w-[450px] rounded-md outline-none text-black border-white border-2">
+       
+        <button class="button-33" role="button">Submit</button>
+    
+    </div>
+    
+    <div id="filterBox" class=" mt-10">
+        <button  id="Smile" class="button-70" role="button">Smile</button>
+        <button id="Flag" class="button-70" role="button">Flag</button>
+        <button  id="Laugh" class="button-70" role="button">Laugh</button>
+        <button  id="Travel" class="button-70" role="button">Travel</button>
+        <button  id="People" class="button-70" role="button">People</button>
+        <button id="Hand" class="button-70" role="button">Hand</button>
+        <button id="People" class="button-70" role="button">People</button>
+    </div>
+
+    <div class="flex flex-wrap py-8 w-full px-10" id="emoji_container">  
+    </div>
+   
+</body>
+</html>
